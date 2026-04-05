@@ -167,9 +167,6 @@ export function SiteConverter() {
             {loading ? <span className="spinner" /> : t("actions.convert")}
           </button>
         </div>
-        <div style={styles.inputDescription}>
-          {t("messages.inputDescription")}
-        </div>
         {!hasKey && (
           <p style={styles.noKeyWarning}>{t("messages.noKeyWarning")}</p>
         )}
@@ -223,6 +220,10 @@ export function SiteConverter() {
           <pre style={styles.jsonOutput}>{jsonOutput}</pre>
         </div>
       )}
+
+      <div style={styles.seoDescription}>
+        {t("messages.inputDescription")}
+      </div>
     </div>
   );
 }
@@ -377,12 +378,12 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 12,
     color: "var(--text-muted)",
   },
-  inputDescription: {
+  seoDescription: {
     fontSize: 14,
     color: "var(--text)",
     lineHeight: 1.8,
-    marginTop: 24,
-    padding: "24px",
+    marginTop: 32,
+    padding: "32px",
     background: "var(--surface)",
     border: "1px solid var(--border)",
     whiteSpace: "pre-line",
