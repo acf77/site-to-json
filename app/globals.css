@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #161616;
+  --surface: #262626;
+  --surface-2: #353535;
+  --border: #393939;
+  --border-strong: #525252;
+  --text: #f4f4f4;
+  --text-muted: #c6c6c6;
+  --accent: #0f62fe;
+  --accent-hover: #0353e9;
+  --error: #da1e28;
+  --success: #198038;
+  --font-mono: var(--font-ibm-mono, "IBM Plex Mono"), ui-monospace, monospace;
+  --radius: 0px;
+  --radius-card: 16px;
+  --radius-btn: 9999px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1); }
+}
+
+.loading-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ibm-sans), "IBM Plex Sans", -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
