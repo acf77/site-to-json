@@ -134,7 +134,6 @@ ${pageContent}`;
       model: openai("gpt-5.4-nano-2026-03-17"),
       system: systemPrompt,
       prompt: userPrompt,
-      maxTokens: 8192,
     });
     text = result.text;
   } catch (err) {
@@ -161,9 +160,10 @@ ${pageContent}`;
       }
     }
 
-    let current = {};
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let current: any = {};
     for (const patch of patches) {
-      current = applySpecPatch(current, patch);
+      current = applySpecPatch(current, patch as unknown as Parameters<typeof applySpecPatch>[1]);
     }
     spec = current;
   } catch {

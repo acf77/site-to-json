@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Site para JSON",
+    "description": "Converta qualquer URL de site em uma especificação JSON estruturada usando json-render"
+  },
+  "header": {
+    "brand": "trapiche",
+    "products": "Produtos",
+    "documentation": "Documentação",
+    "pricing": "Preços",
+    "about": "Sobre",
+    "login": "Entrar",
+    "deploy": "Fazer deploy",
+    "menuLabel": "Abrir menu"
+  },
+  "converter": {
+    "badge": "powered by json-render",
+    "title": "Site para JSON",
+    "subtitle": "Digite qualquer URL de site e obtenha uma especificação {link} totalmente estruturada.",
+    "jsonRenderLink": "json-render",
+    "apiKey": {
+      "title": "Chave de API da OpenAI",
+      "placeholder": "sk-...",
+      "show": "Mostrar",
+      "hide": "Ocultar",
+      "hint": "Sua chave é armazenada apenas no seu navegador e nunca enviada para nossos servidores — ela vai diretamente para a OpenAI.",
+      "getKey": "Obter uma chave →"
+    },
+    "url": {
+      "placeholder": "https://exemplo.com"
+    },
+    "actions": {
+      "convert": "Converter",
+      "converting": "Convertendo...",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "download": "Baixar"
+    },
+    "messages": {
+      "noKeyWarning": "Adicione sua chave de API da OpenAI acima para converter.",
+      "fetching": "Buscando e analisando {url}...",
+      "error": "Erro:",
+      "networkError": "Erro de rede. Por favor, tente novamente.",
+      "jsonSpec": "Especificação JSON"
+    }
+  },
+  "language": {
+    "en": "English",
+    "pt": "Português"
+  }
+}

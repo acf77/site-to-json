@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "Site to JSON",
+    "description": "Convert any website URL into a structured JSON spec using json-render"
+  },
+  "header": {
+    "brand": "trapiche",
+    "products": "Products",
+    "documentation": "Documentation",
+    "pricing": "Pricing",
+    "about": "About",
+    "login": "Log in",
+    "deploy": "Deploy",
+    "menuLabel": "Open menu"
+  },
+  "converter": {
+    "badge": "powered by json-render",
+    "title": "Site to JSON",
+    "subtitle": "Enter any website URL and get back a fully structured {link} spec.",
+    "jsonRenderLink": "json-render",
+    "apiKey": {
+      "title": "OpenAI API Key",
+      "placeholder": "sk-...",
+      "show": "Show",
+      "hide": "Hide",
+      "hint": "Your key is stored in your browser only and never sent to our servers — it goes directly to OpenAI.",
+      "getKey": "Get a key →"
+    },
+    "url": {
+      "placeholder": "https://example.com"
+    },
+    "actions": {
+      "convert": "Convert",
+      "converting": "Converting...",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "download": "Download"
+    },
+    "messages": {
+      "noKeyWarning": "Add your OpenAI API key above to convert.",
+      "fetching": "Fetching and analyzing {url}...",
+      "error": "Error:",
+      "networkError": "Network error. Please try again.",
+      "jsonSpec": "JSON Spec"
+    }
+  },
+  "language": {
+    "en": "English",
+    "pt": "Português"
+  }
+}

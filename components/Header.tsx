@@ -1,32 +1,48 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/src/i18n/routing";
 
 export function Header() {
+  const t = useTranslations("header");
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav style={styles.nav}>
       <div style={styles.inner}>
-        <a href="/" style={styles.brand} aria-label="trapiche home">
+        <Link href="/" style={styles.brand} aria-label="trapiche home">
           <img src="/logo.webp" alt="Trapiche logo" width={666} height={375} style={styles.logo} />
           <span style={styles.brandName}>trapiche</span>
-        </a>
+        </Link>
 
         <div style={styles.links}>
-          <a href="https://trapiche.cloud/#infraestrutura" style={styles.link}>Produtos</a>
-          <a href="https://trapiche.cloud/docs/quickstart" style={styles.link}>Documentação</a>
-          <a href="https://trapiche.cloud/precos" style={styles.link}>Preços</a>
-          <a href="https://trapiche.cloud/sobre" style={styles.link}>Sobre</a>
+          <a href="https://trapiche.cloud/#infraestrutura" style={styles.link}>{t("products")}</a>
+          <a href="https://trapiche.cloud/docs/quickstart" style={styles.link}>{t("documentation")}</a>
+          <a href="https://trapiche.cloud/precos" style={styles.link}>{t("pricing")}</a>
+          <a href="https://trapiche.cloud/sobre" style={styles.link}>{t("about")}</a>
         </div>
 
         <div style={styles.actions}>
-          <a href="https://dashboard.trapiche.cloud" style={styles.linkSub}>Entrar</a>
-          <a href="https://trapiche.cloud/new" style={styles.cta}>Fazer deploy</a>
+          <a href="https://dashboard.trapiche.cloud" style={styles.linkSub}>{t("login")}</a>
+          <a href="https://trapiche.cloud/new" style={styles.cta}>{t("deploy")}</a>
+          
+          {/* Language Switcher */}
+          <div style={styles.langSwitcher}>
+            <Link href={pathname} locale="en" style={styles.langLink}>
+              EN
+            </Link>
+            <span style={styles.langDivider}>|</span>
+            <Link href={pathname} locale="pt" style={styles.langLink}>
+              PT
+            </Link>
+          </div>
+
           <button
             onClick={() => setMenuOpen((o) => !o)}
             style={styles.menuBtn}
-            aria-label="Abrir menu"
+            aria-label={t("menuLabel")}
             aria-expanded={menuOpen}
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
@@ -40,11 +56,21 @@ export function Header() {
 
       {menuOpen && (
         <div style={styles.drawer}>
-          <a href="https://trapiche.cloud/#infraestrutura" style={styles.drawerLink}>Produtos</a>
-          <a href="https://trapiche.cloud/docs/quickstart" style={styles.drawerLink}>Documentação</a>
-          <a href="https://trapiche.cloud/precos" style={styles.drawerLink}>Preços</a>
-          <a href="https://trapiche.cloud/sobre" style={styles.drawerLink}>Sobre</a>
-          <a href="https://dashboard.trapiche.cloud" style={styles.drawerLink}>Entrar</a>
+          <a href="https://trapiche.cloud/#infraestrutura" style={styles.drawerLink}>{t("products")}</a>
+          <a href="https://trapiche.cloud/docs/quickstart" style={styles.drawerLink}>{t("documentation")}</a>
+          <a href="https://trapiche.cloud/precos" style={styles.drawerLink}>{t("pricing")}</a>
+          <a href="https://trapiche.cloud/sobre" style={styles.drawerLink}>{t("about")}</a>
+          <a href="https://dashboard.trapiche.cloud" style={styles.drawerLink}>{t("login")}</a>
+          
+          {/* Language Switcher in Drawer */}
+          <div style={styles.drawerLangSwitcher}>
+            <Link href={pathname} locale="en" style={styles.drawerLangLink}>
+              English
+            </Link>
+            <Link href={pathname} locale="pt" style={styles.drawerLangLink}>
+              Português
+            </Link>
+          </div>
         </div>
       )}
     </nav>
@@ -119,6 +145,26 @@ const styles: Record<string, React.CSSProperties> = {
     textDecoration: "none",
     transition: "background 0.15s",
   },
+  langSwitcher: {
+    display: "flex",
+    alignItems: "center",
+    gap: 8,
+    padding: "4px 8px",
+    borderRadius: 4,
+    background: "rgba(255,255,255,0.05)",
+  },
+  langLink: {
+    fontSize: 12,
+    fontWeight: 600,
+    color: "#c6c6c6",
+    textDecoration: "none",
+    padding: "2px 4px",
+    transition: "color 0.15s",
+  },
+  langDivider: {
+    color: "#525252",
+    fontSize: 12,
+  },
   menuBtn: {
     display: "none",
     background: "none",
@@ -139,6 +185,17 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 14,
     padding: "12px 8px",
     borderBottom: "1px solid rgba(255,255,255,0.08)",
+    color: "#c6c6c6",
+    textDecoration: "none",
+  },
+  drawerLangSwitcher: {
+    display: "flex",
+    gap: 16,
+    padding: "12px 8px",
+    borderBottom: "1px solid rgba(255,255,255,0.08)",
+  },
+  drawerLangLink: {
+    fontSize: 14,
     color: "#c6c6c6",
     textDecoration: "none",
   },

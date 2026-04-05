@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 type ConvertResult = {
   spec?: unknown;
@@ -12,6 +13,7 @@ type ConvertResult = {
 const LS_KEY = "openai_api_key";
 
 export function SiteConverter() {
+  const t = useTranslations("converter");
   const [url, setUrl] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ConvertResult | null>(null);
@@ -51,7 +53,7 @@ export function SiteConverter() {
       const data: ConvertResult = await res.json();
       setResult(data);
     } catch {
-      setResult({ error: "Network error. Please try again." });
+      setResult({ error: t("messages.networkError") });
     } finally {
       setLoading(false);
     }
@@ -90,19 +92,21 @@ export function SiteConverter() {
   return (
     <div style={styles.container}>
       <header style={styles.header}>
-        <div style={styles.badge}>powered by json-render</div>
-        <h1 style={styles.title}>Site to JSON</h1>
+        <div style={styles.badge}>{t("badge")}</div>
+        <h1 style={styles.title}>{t("title")}</h1>
         <p style={styles.subtitle}>
-          Enter any website URL and get back a fully structured{" "}
-          <a
-            href="https://github.com/vercel-labs/json-render"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={styles.link}
-          >
-            json-render
-          </a>{" "}
-          spec.
+          {t.rich("subtitle", {
+            link: (chunks) => (
+              <a
+                href="https://github.com/vercel-labs/json-render"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.link}
+              >
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
       </header>
 
@@ -114,7 +118,7 @@ export function SiteConverter() {
               ...styles.keyDot,
               background: hasKey ? "#42be65" : "#da1e28",
             }} />
-            OpenAI API Key
+            {t("apiKey.title")}
           </span>
           <span style={styles.keyChevron}>{keyOpen ? "▲" : "▼"}</span>
         </button>
@@ -126,7 +130,7 @@ export function SiteConverter() {
                 type={keyVisible ? "text" : "password"}
                 value={apiKey}
                 onChange={(e) => saveKey(e.target.value)}
-                placeholder="sk-..."
+                placeholder={t("apiKey.placeholder")}
                 style={styles.keyInput}
                 spellCheck={false}
               />
@@ -135,13 +139,13 @@ export function SiteConverter() {
                 onClick={() => setKeyVisible((v) => !v)}
                 style={styles.keyVisBtn}
               >
-                {keyVisible ? "Hide" : "Show"}
+                {keyVisible ? t("apiKey.hide") : t("apiKey.show")}
               </button>
             </div>
             <p style={styles.keyHint}>
-              Your key is stored in your browser only and never sent to our servers — it goes directly to OpenAI.{" "}
+              {t("apiKey.hint")}{" "}
               <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer" style={styles.link}>
-                Get a key →
+                {t("apiKey.getKey")}
               </a>
             </p>
           </div>
@@ -155,18 +159,18 @@ export function SiteConverter() {
             type="url"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
-            placeholder="https://example.com"
+            placeholder={t("url.placeholder")}
             required
             disabled={loading}
             style={styles.input}
             autoFocus
           />
           <button type="submit" disabled={loading || !url.trim() || !hasKey} style={styles.button}>
-            {loading ? <span className="spinner" /> : "Convert"}
+            {loading ? <span className="spinner" /> : t("actions.convert")}
           </button>
         </div>
         {!hasKey && (
-          <p style={styles.noKeyWarning}>Add your OpenAI API key above to convert.</p>
+          <p style={styles.noKeyWarning}>{t("messages.noKeyWarning")}</p>
         )}
       </form>
 
@@ -177,13 +181,13 @@ export function SiteConverter() {
             <span className="loading-dot" />
             <span className="loading-dot" />
           </div>
-          <p style={styles.statusText}>Fetching and analyzing {url}...</p>
+          <p style={styles.statusText}>{t("messages.fetching", { url })}</p>
         </div>
       )}
 
       {result?.error && (
         <div style={styles.errorBox}>
-          <strong>Error:</strong> {result.error}
+          <strong>{t("messages.error")}</strong> {result.error}
           {result.raw && (
             <pre style={{ ...styles.rawOutput, marginTop: 12 }}>{result.raw}</pre>
           )}
@@ -194,7 +198,7 @@ export function SiteConverter() {
         <div style={styles.outputWrapper}>
           <div style={styles.outputHeader}>
             <div style={styles.outputMeta}>
-              <span style={styles.outputLabel}>JSON Spec</span>
+              <span style={styles.outputLabel}>{t("messages.jsonSpec")}</span>
               {result?.url && (
                 <a
                   href={result.url}
@@ -208,10 +212,10 @@ export function SiteConverter() {
             </div>
             <div style={styles.outputActions}>
               <button onClick={handleCopy} style={styles.actionBtn}>
-                {copied ? "Copied!" : "Copy"}
+                {copied ? t("actions.copied") : t("actions.copy")}
               </button>
               <button onClick={handleDownload} style={styles.actionBtn}>
-                Download
+                {t("actions.download")}
               </button>
             </div>
           </div>
