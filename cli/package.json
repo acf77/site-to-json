@@ -1,0 +1,25 @@
+{
+  "name": "site-to-json-cli",
+  "version": "0.1.0",
+  "description": "CLI tool to convert websites to JSON using json-render - works offline with OpenAI",
+  "type": "module",
+  "bin": {
+    "site-to-json": "./cli.ts"
+  },
+  "scripts": {
+    "start": "bun cli.ts",
+    "compile": "bun build cli.ts --compile --outfile site-to-json",
+    "compile:mac": "bun build cli.ts --compile --target=bun-darwin-x64 --outfile site-to-json-mac",
+    "compile:linux": "bun build cli.ts --compile --target=bun-linux-x64 --outfile site-to-json-linux",
+    "compile:windows": "bun build cli.ts --compile --target=bun-windows-x64 --outfile site-to-json.exe"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.0",
+    "@json-render/core": "0.16.0",
+    "ai": "^6.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
