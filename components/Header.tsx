@@ -12,10 +12,10 @@ export function Header() {
   return (
     <nav style={styles.nav}>
       <div style={styles.inner}>
-        <Link href="/" style={styles.brand} aria-label="trapiche home">
+        <a href="https://trapiche.cloud" style={styles.brand} aria-label="trapiche home">
           <img src="/logo.webp" alt="Trapiche logo" width={666} height={375} style={styles.logo} />
           <span style={styles.brandName}>trapiche</span>
-        </Link>
+        </a>
 
         <div style={styles.links}>
           <a href="https://trapiche.cloud/#infraestrutura" style={styles.link}>{t("products")}</a>
