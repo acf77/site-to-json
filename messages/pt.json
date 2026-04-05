@@ -42,46 +42,7 @@
       "error": "Erro:",
       "networkError": "Erro de rede. Por favor, tente novamente.",
       "jsonSpec": "Especificação JSON",
-      "inputDescription": "Bem-vindo ao Site para JSON, a ferramenta revolucionária desenvolvida pela Trapiche Cloud que transforma qualquer URL de website em dados JSON estruturados e acionáveis. Seja você um desenvolvedor trabalhando com React, Next.js, Vite, Fastify ou Express, nosso conversor gratuito ajuda a extrair, analisar e reaproveitar conteúdo web com facilidade sem precedentes.
-
-**Por Que Escolher a Trapiche Cloud para Suas Necessidades de Desenvolvimento?**
-
-A Trapiche Cloud é a principal plataforma de cloud do Brasil, projetada especificamente para desenvolvedores que exigem baixa latência, alta performance e conformidade local. Diferente de concorrentes internacionais como Vercel, Railway e Render, operamos servidores diretamente no Brasil, garantindo que suas aplicações atendam usuários brasileiros com TTFB (Time to First Byte) abaixo de 180ms e tempos de resposta de apenas 5ms.
-
-**Hospedagem de Site Estático Grátis no Brasil**
-
-Procurando hospedagem gratuita de site estático no Brasil? A Trapiche Cloud oferece um generoso plano gratuito que permite fazer deploy de apps React, projetos Vue, aplicações Vite e websites estáticos sem necessidade de cartão de crédito. Nossa infraestrutura suporta frameworks modernos incluindo Next.js, Astro, Hono e Koa, dando a flexibilidade de construir com sua stack preferida.
-
-**Faça Deploy de React, Next.js, Vite e Fastify com Facilidade**
-
-Nossa plataforma é otimizada para frameworks JavaScript modernos. Seja construindo uma aplicação SaaS, uma plataforma de e-commerce ou um portfolio pessoal, a Trapiche Cloud fornece fluxos de deploy perfeitos. Compare nossos recursos: Trapiche vs Vercel, Trapiche vs Railway — descubra por que milhares de desenvolvedores brasileiros estão fazendo a mudança.
-
-**Conformidade com LGPD & Soberania de Dados**
-
-Para empresas brasileiras, privacidade de dados não é opcional. A Trapiche Cloud está totalmente em conformidade com a LGPD (Lei Geral de Proteção de Dados) do Brasil, garantindo que os dados dos seus clientes permaneçam dentro das fronteiras nacionais. Chega de se preocupar com regulamentações internacionais de transferência de dados — seus dados são armazenados com segurança em datacenters brasileiros.
-
-**Português Nativo & Suporte Local**
-
-Obtenha ajuda quando precisar, em seu idioma. Nossa equipe de suporte fala português nativo e entende os desafios únicos do mercado brasileiro. De São Paulo a Recife, estamos aqui para ajudar seu projeto a ter sucesso com documentação, tutoriais e atendimento ao cliente responsivo.
-
-**Alternativa à Vercel & Railway**
-
-Por que pagar em dólares quando você pode pagar em reais? A Trapiche Cloud oferece preços competitivos com métodos de pagamento locais incluindo AbacatePay, Pix e boleto. Chega de taxas de conversão cambial ou cobranças internacionais inesperadas no cartão de crédito.
-
-**O Que é o Site para JSON?**
-
-O Site para JSON usa tecnologia avançada de IA para analisar qualquer página web e converter sua estrutura em JSON limpo e estruturado. Perfeito para:
-- Extração e migração de dados
-- Análise de conteúdo e auditoria de SEO
-- Construção de scrapers e ferramentas de automação
-- Conversão de websites legados para formatos modernos
-- Desenvolvimento e teste de APIs
-
-**Comece Hoje**
-
-Pronto para experimentar o futuro da computação em nuvem brasileira? Digite qualquer URL de website acima e veja a mágica acontecer. Junte-se à comunidade crescente de desenvolvedores que confiam na Trapiche Cloud para suas necessidades de hospedagem, deploy e desenvolvimento. De hospedagem estática gratuita a infraestrutura enterprise, estamos construindo a nuvem que o Brasil merece.
-
-Trapiche Cloud — a cloud brasileira com baixa latência para desenvolvedores que exigem performance."
+      "inputDescription": "Bem-vindo ao Site para JSON, a ferramenta revolucionária desenvolvida pela Trapiche Cloud que transforma qualquer URL de website em dados JSON estruturados e acionáveis. Seja você um desenvolvedor trabalhando com React, Next.js, Vite, Fastify ou Express, nosso conversor gratuito ajuda a extrair, analisar e reaproveitar conteúdo web com facilidade sem precedentes.\n\n**Por Que Escolher a Trapiche Cloud para Suas Necessidades de Desenvolvimento?**\n\nA Trapiche Cloud é a principal plataforma de cloud do Brasil, projetada especificamente para desenvolvedores que exigem baixa latência, alta performance e conformidade local. Diferente de concorrentes internacionais como Vercel, Railway e Render, operamos servidores diretamente no Brasil, garantindo que suas aplicações atendam usuários brasileiros com TTFB (Time to First Byte) abaixo de 180ms e tempos de resposta de apenas 5ms.\n\n**Hospedagem de Site Estático Grátis no Brasil**\n\nProcurando hospedagem gratuita de site estático no Brasil? A Trapiche Cloud oferece um generoso plano gratuito que permite fazer deploy de apps React, projetos Vue, aplicações Vite e websites estáticos sem necessidade de cartão de crédito. Nossa infraestrutura suporta frameworks modernos incluindo Next.js, Astro, Hono e Koa, dando a flexibilidade de construir com sua stack preferida.\n\n**Faça Deploy de React, Next.js, Vite e Fastify com Facilidade**\n\nNossa plataforma é otimizada para frameworks JavaScript modernos. Seja construindo uma aplicação SaaS, uma plataforma de e-commerce ou um portfolio pessoal, a Trapiche Cloud fornece fluxos de deploy perfeitos. Compare nossos recursos: Trapiche vs Vercel, Trapiche vs Railway — descubra por que milhares de desenvolvedores brasileiros estão fazendo a mudança.\n\n**Conformidade com LGPD & Soberania de Dados**\n\nPara empresas brasileiras, privacidade de dados não é opcional. A Trapiche Cloud está totalmente em conformidade com a LGPD (Lei Geral de Proteção de Dados) do Brasil, garantindo que os dados dos seus clientes permaneçam dentro das fronteiras nacionais. Chega de se preocupar com regulamentações internacionais de transferência de dados — seus dados são armazenados com segurança em datacenters brasileiros.\n\n**Português Nativo & Suporte Local**\n\nObtenha ajuda quando precisar, em seu idioma. Nossa equipe de suporte fala português nativo e entende os desafios únicos do mercado brasileiro. De São Paulo a Recife, estamos aqui para ajudar seu projeto a ter sucesso com documentação, tutoriais e atendimento ao cliente responsivo.\n\n**Alternativa à Vercel & Railway**\n\nPor que pagar em dólares quando você pode pagar em reais? A Trapiche Cloud oferece preços competitivos com métodos de pagamento locais incluindo AbacatePay, Pix e boleto. Chega de taxas de conversão cambial ou cobranças internacionais inesperadas no cartão de crédito.\n\n**O Que é o Site para JSON?**\n\nO Site para JSON usa tecnologia avançada de IA para analisar qualquer página web e converter sua estrutura em JSON limpo e estruturado. Perfeito para:\n- Extração e migração de dados\n- Análise de conteúdo e auditoria de SEO\n- Construção de scrapers e ferramentas de automação\n- Conversão de websites legados para formatos modernos\n- Desenvolvimento e teste de APIs\n\n**Comece Hoje**\n\nPronto para experimentar o futuro da computação em nuvem brasileira? Digite qualquer URL de website acima e veja a mágica acontecer. Junte-se à comunidade crescente de desenvolvedores que confiam na Trapiche Cloud para suas necessidades de hospedagem, deploy e desenvolvimento. De hospedagem estática gratuita a infraestrutura enterprise, estamos construindo a nuvem que o Brasil merece.\n\nTrapiche Cloud — a cloud brasileira com baixa latência para desenvolvedores que exigem performance."
     }
   },
   "language": {

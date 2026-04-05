@@ -42,46 +42,7 @@
       "error": "Error:",
       "networkError": "Network error. Please try again.",
       "jsonSpec": "JSON Spec",
-      "inputDescription": "Welcome to Site to JSON, the revolutionary AI-powered tool developed by Trapiche Cloud that transforms any website URL into structured, actionable JSON data. Whether you're a developer working with React, Next.js, Vite, Fastify, or Express applications, our free converter helps you extract, analyze, and repurpose web content with unprecedented ease.
-
-**Why Choose Trapiche Cloud for Your Development Needs?**
-
-Trapiche Cloud is Brazil's premier cloud platform designed specifically for developers who demand low latency, high performance, and local compliance. Unlike international competitors such as Vercel, Railway, and Render, we operate servers directly in Brazil, ensuring your applications serve Brazilian users with TTFB (Time to First Byte) under 180ms and response times as fast as 5ms.
-
-**Hospedagem de Site Estático Grátis no Brasil**
-
-Looking for free static site hosting in Brazil? Trapiche Cloud offers a generous free tier that lets you deploy React apps, Vue projects, Vite applications, and static websites without requiring a credit card. Our infrastructure supports modern frameworks including Next.js, Astro, Hono, and Koa, giving you the flexibility to build with your preferred stack.
-
-**Deploy React, Next.js, Vite & Fastify with Ease**
-
-Our platform is optimized for modern JavaScript frameworks. Whether you're building a SaaS application, an e-commerce platform, or a personal portfolio, Trapiche Cloud provides seamless deployment workflows. Compare our features: Trapiche vs Vercel, Trapiche vs Railway — discover why thousands of Brazilian developers are making the switch.
-
-**LGPD Compliance & Data Sovereignty**
-
-For Brazilian businesses, data privacy isn't optional. Trapiche Cloud is fully compliant with Brazil's LGPD (Lei Geral de Proteção de Dados), ensuring your customer data stays within national borders. No more worrying about international data transfer regulations — your data is stored securely in Brazilian datacenters.
-
-**Português Nativo & Local Support**
-
-Get help when you need it, in your language. Our support team speaks native Portuguese and understands the unique challenges of the Brazilian market. From São Paulo to Recife, we're here to help your project succeed with documentation, tutorials, and responsive customer service.
-
-**Alternative to Vercel & Railway**
-
-Why pay in dollars when you can pay in reais? Trapiche Cloud offers competitive pricing with local payment methods including AbacatePay, Pix, and boleto. No more currency conversion fees or surprise international charges on your credit card.
-
-**What is Site to JSON?**
-
-Site to JSON uses advanced AI technology to analyze any webpage and convert its structure into clean, structured JSON. Perfect for:
-- Data extraction and migration
-- Content analysis and SEO auditing  
-- Building scrapers and automation tools
-- Converting legacy websites to modern formats
-- API development and testing
-
-**Get Started Today**
-
-Ready to experience the future of Brazilian cloud computing? Enter any website URL above and see the magic happen. Join the growing community of developers who trust Trapiche Cloud for their hosting, deployment, and development needs. From free static hosting to enterprise-grade infrastructure, we're building the cloud that Brazil deserves.
-
-Trapiche Cloud — a cloud brasileira com baixa latência para desenvolvedores que exigem performance."
+      "inputDescription": "Welcome to Site to JSON, the revolutionary AI-powered tool developed by Trapiche Cloud that transforms any website URL into structured, actionable JSON data. Whether you're a developer working with React, Next.js, Vite, Fastify, or Express applications, our free converter helps you extract, analyze, and repurpose web content with unprecedented ease.\n\n**Why Choose Trapiche Cloud for Your Development Needs?**\n\nTrapiche Cloud is Brazil's premier cloud platform designed specifically for developers who demand low latency, high performance, and local compliance. Unlike international competitors such as Vercel, Railway, and Render, we operate servers directly in Brazil, ensuring your applications serve Brazilian users with TTFB (Time to First Byte) under 180ms and response times as fast as 5ms.\n\n**Hospedagem de Site Estático Grátis no Brasil**\n\nLooking for free static site hosting in Brazil? Trapiche Cloud offers a generous free tier that lets you deploy React apps, Vue projects, Vite applications, and static websites without requiring a credit card. Our infrastructure supports modern frameworks including Next.js, Astro, Hono, and Koa, giving you the flexibility to build with your preferred stack.\n\n**Deploy React, Next.js, Vite & Fastify with Ease**\n\nOur platform is optimized for modern JavaScript frameworks. Whether you're building a SaaS application, an e-commerce platform, or a personal portfolio, Trapiche Cloud provides seamless deployment workflows. Compare our features: Trapiche vs Vercel, Trapiche vs Railway — discover why thousands of Brazilian developers are making the switch.\n\n**LGPD Compliance & Data Sovereignty**\n\nFor Brazilian businesses, data privacy isn't optional. Trapiche Cloud is fully compliant with Brazil's LGPD (Lei Geral de Proteção de Dados), ensuring your customer data stays within national borders. No more worrying about international data transfer regulations — your data is stored securely in Brazilian datacenters.\n\n**Português Nativo & Local Support**\n\nGet help when you need it, in your language. Our support team speaks native Portuguese and understands the unique challenges of the Brazilian market. From São Paulo to Recife, we're here to help your project succeed with documentation, tutorials, and responsive customer service.\n\n**Alternative to Vercel & Railway**\n\nWhy pay in dollars when you can pay in reais? Trapiche Cloud offers competitive pricing with local payment methods including AbacatePay, Pix, and boleto. No more currency conversion fees or surprise international charges on your credit card.\n\n**What is Site to JSON?**\n\nSite to JSON uses advanced AI technology to analyze any webpage and convert its structure into clean, structured JSON. Perfect for:\n- Data extraction and migration\n- Content analysis and SEO auditing  \n- Building scrapers and automation tools\n- Converting legacy websites to modern formats\n- API development and testing\n\n**Get Started Today**\n\nReady to experience the future of Brazilian cloud computing? Enter any website URL above and see the magic happen. Join the growing community of developers who trust Trapiche Cloud for their hosting, deployment, and development needs. From free static hosting to enterprise-grade infrastructure, we're building the cloud that Brazil deserves.\n\nTrapiche Cloud — a cloud brasileira com baixa latência para desenvolvedores que exigem performance."
     }
   },
   "language": {
