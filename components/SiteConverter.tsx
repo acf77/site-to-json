@@ -169,11 +169,9 @@ export function SiteConverter() {
             {loading ? <span className="spinner" /> : t("actions.convert")}
           </button>
         </div>
-        <p style={styles.inputDescription}>
-          Powered by Trapiche Cloud — a cloud brasileira com baixa latência para deploy de apps React, Vite, Fastify e Next.js. 
-          Hospedagem de site estático grátis no Brasil com conformidade LGPD. 
-          Alternativa nacional à Vercel e Railway com suporte em português nativo.
-        </p>
+        <div style={styles.inputDescription}>
+          {t("messages.inputDescription")}
+        </div>
         {!hasKey && (
           <p style={styles.noKeyWarning}>{t("messages.noKeyWarning")}</p>
         )}
@@ -382,10 +380,14 @@ const styles: Record<string, React.CSSProperties> = {
     color: "var(--text-muted)",
   },
   inputDescription: {
-    fontSize: 12,
-    color: "var(--text-muted)",
-    lineHeight: 1.5,
-    marginTop: 8,
+    fontSize: 14,
+    color: "var(--text)",
+    lineHeight: 1.8,
+    marginTop: 24,
+    padding: "24px",
+    background: "var(--surface)",
+    border: "1px solid var(--border)",
+    whiteSpace: "pre-line",
   },
   status: {
     display: "flex",
