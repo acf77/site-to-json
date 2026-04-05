@@ -95,18 +95,16 @@ export function SiteConverter() {
         <div style={styles.badge}>{t("badge")}</div>
         <h1 style={styles.title}>{t("title")}</h1>
         <p style={styles.subtitle}>
-          {t.rich("subtitle", {
-            link: (chunks) => (
-              <a
-                href="https://github.com/vercel-labs/json-render"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={styles.link}
-              >
-                {chunks}
-              </a>
-            ),
-          })}
+          Enter any website URL and get back a fully structured{" "}
+          <a
+            href="https://github.com/vercel-labs/json-render"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.link}
+          >
+            json-render
+          </a>{" "}
+          spec.
         </p>
       </header>
 
