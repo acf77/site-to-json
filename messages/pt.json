@@ -41,7 +41,8 @@
       "fetching": "Buscando e analisando {url}...",
       "error": "Erro:",
       "networkError": "Erro de rede. Por favor, tente novamente.",
-      "jsonSpec": "Especificação JSON"
+      "jsonSpec": "Especificação JSON",
+      "inputDescription": "Transforme qualquer site em JSON estruturado com o Site para JSON, a ferramenta gratuita da Trapiche Cloud. Perfeito para desenvolvedores que criam aplicações web modernas com React, Next.js, Vite e Fastify. Nossa infraestrutura de cloud brasileira oferece hospedagem com latência ultra baixa, servidores localizados no Brasil garantindo TTFB abaixo de 180ms e tempos de resposta de apenas 5ms. Diferente de concorrentes internacionais como Vercel e Railway, a Trapiche Cloud oferece suporte em português nativo e conformidade total com a LGPD para empresas brasileiras. Faça deploy do seu app React, projeto Vue ou site estático com nosso plano gratuito - sem necessidade de cartão de crédito. Seja para extrair dados de sites, converter HTML para JSON ou analisar estrutura de páginas, nosso conversor com IA faz tudo isso. Criado por brasileiros para brasileiros, com métodos de pagamento locais via AbacatePay e infraestrutura projetada especificamente para o mercado brasileiro. Comece hoje com hospedagem estática gratuita e experimente a diferença de uma verdadeira plataforma de cloud brasileira."
     }
   },
   "language": {

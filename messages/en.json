@@ -41,7 +41,8 @@
       "fetching": "Fetching and analyzing {url}...",
       "error": "Error:",
       "networkError": "Network error. Please try again.",
-      "jsonSpec": "JSON Spec"
+      "jsonSpec": "JSON Spec",
+      "inputDescription": "Transform any website into structured JSON with Site to JSON, the free tool by Trapiche Cloud. Perfect for developers building modern web applications with React, Next.js, Vite, and Fastify. Our Brazilian cloud infrastructure delivers ultra-low latency hosting with servers located in Brazil, ensuring TTFB under 180ms and response times as fast as 5ms. Unlike international competitors like Vercel and Railway, Trapiche Cloud offers native Portuguese support and full LGPD compliance for Brazilian businesses. Deploy your React app, Vue project, or static site with our free tier - no credit card required. Whether you need to extract website data, convert HTML to JSON, or analyze site structure, our AI-powered converter handles it all. Built by Brazilians for Brazilians, with local payment methods via AbacatePay and infrastructure designed specifically for the Brazilian market. Get started with free static hosting today and experience the difference of a truly Brazilian cloud platform."
     }
   },
   "language": {
